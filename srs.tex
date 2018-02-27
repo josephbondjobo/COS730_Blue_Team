@@ -85,12 +85,14 @@ The goal of this project is to implement a benchmarking service that will accept
 \subsection{Product Perspective}
 
 \subsubsection{System Interfaces}
-
+The system will provide a web interface for users to request and specify the benchmarking services they need. The system interface is depicted as below:\\
+\includegraphics[width=12cm]{SI.jpeg}
 \subsubsection{User Interfaces}
-
+The system will have a user interface where s/he is interacting with the system by requesting some services and getting a response from the system done at the backend. This is the front end part of the system that the client/user will be seing. It must follow basic Windows style and functionality conventions. The interface will have a menu where the services can be requested, a log button on the menu to see what services were done on the pc and by who and a quick access button to terminate the benchmarking process if something goes wrong.
 \subsubsection{Hardware Interfaces}
-
+The system will run a computer that has is Windows 7 and higher and that has at least 100 Mb of free space on the hard drive and 1Gb of Ram. That pc used must be an isolated machine where the benchmarking service will be done in order to reduce/ minimize the side effects of others programs running simultaneously. The system does not write information directly to the user's computer. But instead uses a database which is located on a network server. The user's computer transfers and receives data using basic networking protocols like HTTP. All systems' information is stored in the server's database which stores the data on the server's disk reason being if the system runs out of memory or fails during benchmarking the previously gathered information remains on the server's database.
 \subsubsection{Softwares Interfaces}
+The system requires a a properly configuered version of Windows 7 or later to run the application. The system's server can either be Windows or Linux but must have a MySQL databse properly installed and configured. The software interface will be web based, therefore must have Microsoft .NET Framework 1.1 or greater installed and for the designing of the benchmarking that can be done using Adobe XD.
 
 \subsubsection{Communications Interfaces}
 

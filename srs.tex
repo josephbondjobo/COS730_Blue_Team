@@ -71,16 +71,44 @@
 \pagenumbering{arabic}
 
 \section {Introduction}
-Benchmarking is an important and useful application in the commercial and academic world. It is an integral part of research related to the development of new algorithms and techniques as well as the refinement and optimisation of existing operations. It can also be used to as a teaching tool for students to review the notions of space and time complexity.There are currently very few benchmarking tools and services available, and those that do exist require intricate configurations that may be beyond the reach of the developers, researchers, teachers and students who would like to use them.
+This section gives a scope description of the benchmark service system. Also, the purpose for this document is described and a list of abbreviations and definitions is provided.
 \subsection{Purpose}
-The goal of this project is to implement a benchmarking service that will accept a user's source code and measure its performance in terms of CPU time, elapsed time, memory usage, power consumption, heat generation, and others. The service should be provided by executing the requested benchmarks on isolated machines where the side-effects that are not a concern of the specified benchmark are minimized.
+The goal of this document is to give a detailed description of the  benchmarking service. It will explain the purpose and features of the system, the interfaces of the system, what the system will do and the constraints under which it must operate.
+
+
 \subsection{Scope}
+The benchmarking service will accept a user's source code and measure its performance in terms of CPU time, elapsed time, memory usage, power consumption, heat generation, and others.The user's source code could be either an algorithm or a data structure, and the system should give the user a choice of which programming languages their source code can be implemented in. The service should be provided by executing the requested benchmarks on isolated machines where the side-effects that are not a concern of the specified benchmark are minimized.
+
+The system will be used as an integral part of research related to the development of new algorithms and techniques as well as the refinement and optimisation of existing operations. It can also be used to as a teaching tool for students to review the notions of space and time complexity.
+
+
 
 \subsection{Definitions, Acronyms and Abbreviations}
+\begin{center}
+\begin{tabular}{ |l|l{\textwidth}| } 
+\hline
+Term & Definition \\ 
+\hline
+User & Individual who uses the benchmarking system. \\ 
+\hline
+Software Requirements Specification & A document that completely describes all of the functions of a proposed system and the constraints under which it must operate. For example, this document. \\ 
+\hline
+Benchmark & Evaluate (something) by comparison with a standard.
+\hline
+\end{tabular}
+\end{center}
 
 \subsection{References}
+IEEE. IEEE Std 830-1998 IEEE Recommended Practice for Software Requirements Specifications. IEEE Computer Society, 1998
+
+\subsection{Overview}
+The remainder of this document consists of two chapters. The second chapter, the Overall Description section, of this document gives a description of the system's functionality. It describes the informal requirements and is used to establish a context for the technical requirements specification in the next chapter.
+
+The third chapter, Specific Requirements section, of this document gives a detailed description of the benchmarking service. It describes in technical terms the details of the functionality of the system.
 
 \section{Overall Description}
+
+
 
 \subsection{Product Perspective}
 

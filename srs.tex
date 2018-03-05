@@ -123,11 +123,13 @@ The system will run a computer that has is Windows 7 and higher and that has at 
 The system requires a a properly configuered version of Windows 7 or later to run the application. The system's server can either be Windows or Linux but must have a MySQL databse properly installed and configured. The software interface will be web based, therefore must have Microsoft .NET Framework 1.1 or greater installed and for the designing of the benchmarking that can be done using Adobe XD.
 
 \subsubsection{Communications Interfaces}
-
+The benchmarking system will have a network server that is web-based. The server exists to retrieve information from the database
+and compute the services in terms of the benchmark metrics provided. The web interface will also query the database for the historical computations of the benchmark metrics. The HTTP server will be used to send the requests from the web interface to
+the benchmarking system.
 \subsubsection{Memory}
-
+The system will not use memory less than 100Mb of the hard drive and 1Gb of RAM as described on the hardware interface.
 \subsubsection{Operations}
-
+The user will initiate the request for benchmarking services and wait for response. The response might take a while as the system is required to do computation and comparison between two inputs. The user will have an option of inputting algorithm or data structure and the input will be validated to check if it is algorithm or data structure. The system will also allow the user to store all the computation and comparison results to the database as historical data to avoid computing the same request many times,and also for recovery. 
 \subsubsection{Site Adaptation Requirements}
 
 \subsection{Product Functions}

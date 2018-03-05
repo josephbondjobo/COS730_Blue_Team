@@ -52,6 +52,7 @@
 \date{} 
 \author{	JM Bondjobo		13232852 		\\
 		Martha Mohlala		10353403
+		D Jansen van Vuuren	18364412
 		 \\
 		 KJ Muranga         13278012        \\
 }
@@ -135,12 +136,43 @@ The system will not use memory less than 100Mb of the hard drive and 1Gb of RAM 
 \subsubsection{Operations}
 The user will initiate the request for benchmarking services and wait for response. The response might take a while as the system is required to do computation and comparison between two inputs. The user will have an option of inputting algorithm or data structure and the input will be validated to check if it is algorithm or data structure. The system will also allow the user to store all the computation and comparison results to the database as historical data to avoid computing the same request many times,and also for recovery. 
 \subsubsection{Site Adaptation Requirements}
+The program/tool must able to view and compile code. It must measure CPU (Central Processing Unit) performance, memory usage (RAM, Random Access Memory), temperature, power consumption and a lot of other variables.
+It should also ideally be able to accept and handle any modern coding languages such as Java, C#, C++ etc. The program must also be a web-application that can compile code and test for its runtime attributes. 
+The user must select their programming language and then input the code. The program then compiles the code and give feedback on power usage, temperature difference etc. This will all be done in a web-application.
 
 \subsection{Product Functions}
+The software will perform a list of functions like:
+-	Check what code is written.
+-	Compile code
+-	Minimize main application concern
+-	Calculate memory usage
+-	Calculate temperature difference
+-	Calculate power consumption
+-	Calculate CPU usage
+-	Give feedback.
+-	User must be able to keep feedback (download)
+These functions must be executed and the correct feedback must be given. For instance, when the user’s code is compiled, the calculation must not measure performance changes to the program, but rather only to the user’s code. 
+The process of the functions are as follows:
+1.	User select’s programming language
+2.	User inputs their code.
+3.	Program compiles code.
+4.	Measure performance and hold information
+5.	If code did not have any errors
+a.	Give performance feedback
+6.	If code did have errors
+a.	Give correct feedback
 
 \subsection{User Characteristics}
+An average user does not even need to have a programming background. If the user needs to test the performance of code and give the feedback back to the developer, they can. They can simply copy the code into the program and get the results, if there aren’t any errors in the code that they submitted. One of the goals of the application is to give feedback in a very user friendly manner, so that they do not need any knowing of how coding works to use the information. 
+
+Graphs can be created to give users an even better understanding of how the application measures performance. These graphs can then be downloaded and exported to an excel document or PDF. 
 
 \subsection{Constraints}
+Limitations to developer options can include the following:
+-	Programming knowledge (Being able to only compile code that the developers know of.)
+-	Parallel operation (Measuring one program inside another program.)
+-	Control function (Test whether user code will “break” our program.)
+-	If user’s device is to slow (Hinder measuring process may result in inaccurate results.)
 
 \subsection{Assumptions and Dependencies}
 

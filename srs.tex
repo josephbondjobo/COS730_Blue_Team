@@ -55,6 +55,7 @@
 		D Jansen van Vuuren	18364412
 		 \\
 		 KJ Muranga         13278012        \\
+		 RT Mabaso          18296272
 }
 
 \begin{document}
@@ -183,11 +184,23 @@ Limitations to developer options can include the following:
 \subsection{Functional Requirements}
 
 \subsection{Performance Requirements}
-
+The system shall respond to user input in few minutes, if it takes too long than expected, a progress indicator shall be display to notify the user.
+If the system loses the connection to internet, an error message or pop-up message will be display to inform the user.
+The system should be able to handle reasonable users without inconsistency.
 \subsection{Design Constraints}
-
+The hard drive free space must be at least 100MB and 1GB ram.
 \subsection{Software System Attributes}
-
+\subsubsection{Reliability}
+The system should work reliably, with automatic backup and recovery features. In case of unexpected operating system error or shut-down, the unsaved data should be recovered without loss. The user will be able to save all the computation and comparison results to the database.
+\subsubsection{Availability}
+The system will be available when it is used.The internet connection should be available to use the system.
+\subsubsection{ Security }
+The system should be access only by the authenticated users. The users credential should be encrypted.\subsubsection{Maintainability}
+All code shall be well documented. Each function will have comment so that it can be easy for the developer who wishes to edit it and for the person who is in charge for maintenance.
+\subsubsection{Portability}
+The system should support windows 7 and higher.
+\subsubsection{Usability}
+ The GUI should be easy to learn and use by users. Either user has programming background or not the system should be user friendly. A built-in help feature should be available in all pages, to guide users how the system work and how to use the system.
 \subsection{Other Requirements}
 
 \newpage

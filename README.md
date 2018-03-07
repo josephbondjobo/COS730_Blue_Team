@@ -5,5 +5,4 @@ JM Bondjobo 13232852\
 K Muranga 13278012\
 F van der Merwe 18358137\
 D Jansen van Vuuren 18364412\
-M Mohlala 10353403\
-RT Mabaso 18296272
+M Mohlala 10353403
